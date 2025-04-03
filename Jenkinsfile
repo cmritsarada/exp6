@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 maven {
-                    goals 'clean install'
+                    goals 'clean package'
                 }
             }
         }
